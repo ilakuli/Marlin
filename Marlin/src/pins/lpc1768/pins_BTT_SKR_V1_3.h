@@ -279,7 +279,7 @@
     #define LCD_PINS_D4             EXPA1_06_PIN
 
     #define LCD_SDSS                EXPA2_07_PIN  // (16) J3-7 & AUX-4
-    #define SD_DETECT_PIN           EXPA2_04_PIN  // (49) (NOT 5V tolerant)
+    #define SD_DETECT_PIN           -1  // EXPA2_04_PIN (49) (NOT 5V tolerant)
 
     #if ENABLED(FYSETC_MINI_12864)
       #define DOGLCD_CS             EXPA1_08_PIN
