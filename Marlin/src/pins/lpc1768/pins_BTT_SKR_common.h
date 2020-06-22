@@ -56,12 +56,13 @@
 #ifndef TEMP_0_PIN
   #define TEMP_0_PIN                    P0_24_A1  // A1 (T1) - (68) - TEMP_0_PIN
 #endif
-#ifndef TEMP_1_PIN
-  #define TEMP_1_PIN                    P0_25_A2  // A2 (T2) - (69) - TEMP_1_PIN
-#endif
+//#ifndef TEMP_1_PIN
+  //#define TEMP_1_PIN                    P0_25_A2  // A2 (T2) - (69) - TEMP_1_PIN
+//#endif
 #ifndef TEMP_BED_PIN
   #define TEMP_BED_PIN                  P0_23_A0  // A0 (T0) - (67) - TEMP_BED_PIN
 #endif
+#define TEMP_CHAMBER_PIN   P0_25_A2
 
 #if HOTENDS == 1 && TEMP_SENSOR_PROBE
   #define TEMP_PROBE_PIN              TEMP_1_PIN
@@ -88,6 +89,8 @@
 #ifndef HEATER_BED_PIN
   #define HEATER_BED_PIN                   P2_05
 #endif
+
+#define HEATER_CHAMBER_PIN P1_28
 
 //
 // LCD / Controller
