@@ -215,6 +215,11 @@
     #define TOUCH_MOSI_PIN                  PB15  // SPI2_MOSI
   #endif
 
+  #define XPT2046_X_CALIBRATION            17880
+  #define XPT2046_Y_CALIBRATION           -12234
+  #define XPT2046_X_OFFSET                   -45
+  #define XPT2046_Y_OFFSET                   349
+
 #elif ENABLED(TFT_480x320)
   #define TFT_RESET_PIN                     PC6
   #define TFT_BACKLIGHT_PIN                 PD13
